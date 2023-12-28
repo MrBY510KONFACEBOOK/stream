@@ -4,76 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Showcase</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        .services-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 2em;
-        }
-
-        .service {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 2em;
-            margin: 1em;
-            flex: 1 0 30%; /* Responsive flexbox */
-            text-align: center;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background-color: #fff;
-            padding: 2em;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        /* Button style */
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -93,32 +24,22 @@
         <div class="service">
             <h2>Service 1</h2>
             <p>Description of Service 1.</p>
-            <button onclick="alert('You clicked Service 1')">Learn More</button>
+            <button onclick="showAlert('You clicked Service 1')">Learn More</button>
         </div>
 
         <div class="service">
             <h2>Service 2</h2>
             <p>Description of Service 2.</p>
-            <button onclick="alert('You clicked Service 2')">Learn More</button>
+            <button onclick="showAlert('You clicked Service 2')">Learn More</button>
         </div>
 
         <div class="service">
             <h2>Service 3</h2>
             <p>Description of Service 3.</p>
-            <button onclick="alert('You clicked Service 3')">Learn More</button>
+            <button onclick="showAlert('You clicked Service 3')">Learn More</button>
         </div>
     </div>
 
-    <script>
-        // Display the modal on page load
-        window.onload = function() {
-            document.getElementById('myModal').style.display = 'flex';
-        };
-
-        // Close the modal
-        function closeModal() {
-            document.getElementById('myModal').style.display = 'none';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
