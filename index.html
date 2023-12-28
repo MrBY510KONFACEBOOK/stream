@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-adsense-account" content="ca-pub-8828054281831211">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8828054281831211"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Stream for all</title>
+    <title>Services Showcase</title>
     <style>
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
-        #video-container {
-            max-width: 800px;
-            width: 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
         }
-        video {
-            width: 100%;
-            height: auto;
-            display: block;
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            margin: 1em;
+            flex: 1 0 30%; /* Responsive flexbox */
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8828054281831211"
-     crossorigin="anonymous"></script>
-<!-- testing2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8828054281831211"
-     data-ad-slot="9776097875"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <div id="video-container">
-        <video controls autoplay>
-            <source src="https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/assadissa/hls_snrt/assadissa.m3u8" type="application/x-mpegURL">
-            Your browser does not support the video tag.
-        </video>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <div class="services-container">
+        <div class="service">
+            <h2>Service 1</h2>
+            <p>Description of Service 1.</p>
+            <button onclick="alert('You clicked Service 1')">Learn More</button>
+        </div>
+
+        <div class="service">
+            <h2>Service 2</h2>
+            <p>Description of Service 2.</p>
+            <button onclick="alert('You clicked Service 2')">Learn More</button>
+        </div>
+
+        <div class="service">
+            <h2>Service 3</h2>
+            <p>Description of Service 3.</p>
+            <button onclick="alert('You clicked Service 3')">Learn More</button>
+        </div>
     </div>
-    <p style="text-align: center; margin-top: 20px;">This live stream is brought to you by Abdellah said.</p>
+
+    <script>
+        // You can add JavaScript functionality here if needed
+    </script>
 </body>
 </html>
